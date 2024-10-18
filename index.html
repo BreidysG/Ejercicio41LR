@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fijación sobre Textos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FIJACIÓN SOBRE TEXTOS</h1>
+        <div id="info">
+            <p>Este ejercicio está formado por un texto presentado en dos columnas estilo periodístico y atravesados por líneas verticales. Debes centrar la mirada en las líneas verticales de cada columna mientras la deslizas hacia abajo como lo va indicando la placa visualizadora.</p>
+            <p>Las líneas verticales te indican las fijaciones que debes hacer para cada línea de texto.</p>
+            <p>Lo ideal es que disminuyas el número de fijaciones que realiza el ojo al leer y puedas percibir por cada línea de texto, y con un solo golpe de vista, tres o más palabras.</p>
+            <p>Este ejercicio te servirá para ampliar tu ángulo lector y así captar más palabras con una sola fijación.</p>
+            <p>Es bueno que trabajes comprensión lectora, por lo tanto intenta comprender sin realizar vocalización o subvocalización.</p>
+        </div>
+        <div id="controles" class="controls">
+            <label for="speed">Selecciona la velocidad (milisegundos por fijación):</label>
+            <input type="number" id="speed" value="300">
+            <button id="start-btn">Iniciar</button>
+        </div>
+        <div id="text-container" class="hidden">
+            <div id="column-left" class="column left-column hidden">
+                <p>En la inmensa llanura, donde el viento susurra entre las hierbas,</p>
+                <p>un joven pastor caminaba tras su rebaño de ovejas blancas.</p>
+                <p>Sus ojos, siempre atentos al horizonte, observaban el cielo cambiante,</p>
+                <p>mientras su fiel perro corría de un lado a otro, cuidando de que ninguna se alejara.</p>
+                <p>El joven soñaba con tierras lejanas, más allá de los montes,</p>
+                <p>donde las ciudades se alzaban con sus torres que tocan las nubes,</p>
+                <p>y los caminos de piedra eran transitados por viajeros de todo el mundo.</p>
+                <p>Pero él seguía allí, en la llanura, con su bastón en mano,</p>
+                <p>contando las estrellas en las noches claras y escuchando los relatos del viento,</p>
+                <p>imaginando que un día partiría en busca de aventuras.</p>
+                <p>Sabía que en el fondo de su corazón, su destino lo esperaba en algún lugar lejano,</p>
+                <p>y que sus pasos algún día lo llevarían hacia lo desconocido.</p>
+            </div>
+            
+            <div id="column-right" class="column right-column hidden">
+                <p>Al amanecer, el horizonte se teñía de dorado, y el pastor se levantaba temprano,</p>
+                <p>observando cómo la luz del sol transformaba la tierra a su alrededor.</p>
+                <p>En aquellos momentos de quietud, solía pensar en los caminos que aún no había recorrido,</p>
+                <p>y en los rostros de las personas que aún no había conocido.</p>
+                <p>Le gustaba imaginar que cada amanecer traía consigo una nueva oportunidad,</p>
+                <p>y que algún día, el viento lo llamaría para partir.</p>
+                <p>El tiempo pasaba lentamente, pero en su interior, el deseo de viajar crecía.</p>
+                <p>Sabía que su vida, aunque sencilla, estaba llena de significados ocultos,</p>
+                <p>y que cada día con su rebaño le preparaba para algo mayor.</p>
+                <p>El pastor no tenía prisa, pues entendía que cada cosa llegaba a su debido tiempo,</p>
+                <p>y mientras tanto, disfrutaba de la paz de su vida en la llanura,</p>
+                <p>esperando el día en que sus pasos finalmente lo llevaran hacia su destino soñado.</p>
+            </div>
+            
+            
+            <!-- Dos líneas verticales en cada columna -->
+            <div id="line1" class="vertical-line left-line1 hidden"></div>
+            <div id="line2" class="vertical-line left-line2 hidden"></div>
+            <div id="line3" class="vertical-line right-line1 hidden" ></div>
+            <div id="line4" class="vertical-line right-line2 hidden"></div>
+        </div>
+        <div id="timer" class="hidden">Tiempo: 3:00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
