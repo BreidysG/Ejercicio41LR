@@ -12,6 +12,8 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden; /* Evitar desplazamiento */
+    background-image: url(/1.png);
+    background-size: cover;
 }
 
 body p{
